@@ -1,6 +1,12 @@
 # ElixirPubSub
 
-**TODO: Add description**
+```
+iex> ElixirPubSub.Communication.start_link()
+iex> ElixirPubSub.Ferrari.talk("Vettel", "Is your gear box OK?")
+iex> ElixirPubSub.Ferrari.talk("Vettel", "Do you copy that?")
+iex> ElixirPubSub.Communication.get()
+```
+
 
 ## Installation
 

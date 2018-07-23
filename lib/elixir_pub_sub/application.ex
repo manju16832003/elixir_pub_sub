@@ -10,6 +10,10 @@ defmodule ElixirPubSub.Application do
     children = [
       # Starts a worker by calling: ElixirPubSub.Worker.start_link(arg)
       # {ElixirPubSub.Worker, arg},
+      %{
+        id: Phoenix.PubSub.PG2,
+        start: { Phoenix.PubSub.PG2, :start_link, [:ferrari, []] }
+      }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

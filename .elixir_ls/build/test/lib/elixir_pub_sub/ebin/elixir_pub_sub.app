@@ -1,0 +1,11 @@
+{application,elixir_pub_sub,
+             [{applications,[kernel,stdlib,elixir,logger,phoenix_pubsub]},
+              {description,"elixir_pub_sub"},
+              {modules,['Elixir.ElixirPubSub',
+                        'Elixir.ElixirPubSub.Application',
+                        'Elixir.ElixirPubSub.Communication',
+                        'Elixir.ElixirPubSub.Ferrari']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger]},
+              {mod,{'Elixir.ElixirPubSub.Application',[]}}]}.
