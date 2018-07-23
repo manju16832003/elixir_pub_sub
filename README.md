@@ -12,4 +12,10 @@ iex> ElixirPubSub.Ferrari.talk("Vettel", "Do you copy that?")
 iex> ElixirPubSub.Communication.get()
 ```
 
+### Improvements
 
+- Going Distributed
+
+### Reference:
+
+https://www.pompecki.com/post/phoenix-pubsub/
