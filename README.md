@@ -1,7 +1,7 @@
 # ElixirPubSub
 
 - Git clone the repo
-- cd to elixir_pub_sub
+- `cd to elixir_pub_sub`
 - `mix deps.get`
 - Then run the following in iex interactive mode
 
