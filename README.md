@@ -3,7 +3,7 @@
 - Git clone the repo
 - `cd to elixir_pub_sub`
 - `mix deps.get`
-- Then run the following in iex interactive mode
+- Then run the following in iex interactive mode `iex -S mix`
 
 ```
 iex> ElixirPubSub.Communication.start_link()
