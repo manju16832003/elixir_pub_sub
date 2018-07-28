@@ -37,7 +37,7 @@ Talking to Vettel (Is your gear box OK?)
 
 ### Improvements
 
-- Going Distributed
+- Redis adapter
 
 ### Reference:
 
