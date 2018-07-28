@@ -12,6 +12,29 @@ iex> ElixirPubSub.Ferrari.talk("Vettel", "Do you copy that?")
 iex> ElixirPubSub.Communication.get()
 ```
 
+## Distributed
+
+Open Terminal 1
+
+```
+> iex --sname node1@localhost -S mix
+iex> ElixirPubSub.Communication.start_link()
+iex> ElixirPubSub.Communication.get()
+```
+
+Open Terminal 2
+```
+iex --sname node2@localhost -S mix
+iex> ElixirPubSub.Communication.start_link()
+iex> Node.connect(:node1@localhost)
+true
+
+iex> ElixirPubSub.Ferrari.talk("Vettel", "Is your gear box OK?")
+// In Terminal one, you could see 
+%{}
+Talking to Vettel (Is your gear box OK?)
+```
+
 ### Improvements
 
 - Going Distributed
